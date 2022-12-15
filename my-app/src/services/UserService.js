@@ -7,6 +7,6 @@ export async function getAllUsers() {
 }
 
 export async function createUser(data) {
-    const response = await axios.post(`/api/add_dropped_student`, {user: data});
+    const response = await axios.post(`/api/add_dropped_student`, data);
     return response.data;
 }
